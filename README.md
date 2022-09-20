@@ -1,1 +1,1 @@
-# dotfiles-nixos
+# dotfiles-framework
