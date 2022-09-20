@@ -12,8 +12,38 @@
 
   nix.settings.experimental-features = "nix-command flakes";
 
-
   networking.hostName = "adalon"; # Define your hostname.
+  time.timeZone = "America/Los_Angeles";
+  services.openssh.enable = true;
+  users.users.bakerdn = {
+    isNormalUser = true;
+    initialPassword = "password";
+    extraGroups = [
+      "wheel"
+      "networkManager"
+    ];
+  };
+  fonts.enableGhostscriptFonts = true;
+  fonts.fontDir.enable = true;
+  fonts.fontconfig.enable = true;
+  fonts.fontconfig.antialias = true;
+  fonts.fontconfig.defaultFonts.monospace = ["Fira Code Light"];
+  fonts.fontconfig.defaultFonts.sansSerif = ["Source Sans Pro"];
+  fonts.fontconfig.defaultFonts.serif = ["Source Sans Pro"];
+  fonts.fonts = with pkgs; [
+    fira-code
+    fira-code-symbols
+
+    source-sans-pro
+    source-serif-pro
+
+    nerdfonts
+  ];
+  hardware.opengl.enable = true;
+  hardware.opengl.driSupport = true;
+
+
+  # networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
