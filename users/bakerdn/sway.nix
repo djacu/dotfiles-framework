@@ -19,6 +19,14 @@
   wayland.windowManager.sway.config.gaps.inner = 12;
   wayland.windowManager.sway.config.gaps.outer = 4;
 
+  # framework resolution
+  wayland.windowManager.sway.config.output = {
+    "Unknown 0x095F 0x00000000" = {
+      mode = "2256x1504@60Hz";
+      scale = "1.35";
+    };
+  };
+
   wayland.windowManager.sway.config.keybindings = let
     mod = config.wayland.windowManager.sway.config.modifier;
   in
