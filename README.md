@@ -1,1 +1,1 @@
-# dotfiles-tweag
+# dotfiles-nixos

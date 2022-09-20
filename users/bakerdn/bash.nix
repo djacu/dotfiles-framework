@@ -7,10 +7,10 @@
   ];
   programs.bash.historyFileSize = 100000;
   programs.bash.historySize = 10000;
-  programs.bash.initExtra = ''
-    eval "$(ssh-agent -s)"
-    ssh-add ~/.ssh/tweag-github
-  '';
+  #programs.bash.initExtra = ''
+  #  eval "$(ssh-agent -s)"
+  #  ssh-add ~/.ssh/tweag-github
+  #'';
   programs.bash.shellAliases = {
     lse = "ls -Fho";
     lsa = "lse -A";

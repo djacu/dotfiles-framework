@@ -87,7 +87,7 @@
     enable = true;
     lfs.enable = true;
     userName = "Daniel Baker";
-    userEmail = "daniel.baker@tweag.io";
+    userEmail = "daniel.n.baker@gmail.com";
   };
 
   # This value determines the Home Manager release that your

@@ -61,7 +61,7 @@
     };
 
     nixosConfigurations = {
-      tweag-laptop = lib.nixosSystem {
+      adalon = lib.nixosSystem {
         inherit system;
 
         specialArgs = {inherit nix-colors;};
