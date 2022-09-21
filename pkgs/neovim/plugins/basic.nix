@@ -13,7 +13,7 @@ with vimPlugins; {
     set number
 
     " Use a color column on the 80-character mark
-    set colorcolumn=80
+    set colorcolumn=88
 
     " Press <tab>, get two spaces
     set expandtab shiftwidth=2
