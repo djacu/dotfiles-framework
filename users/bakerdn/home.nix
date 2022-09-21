@@ -24,8 +24,9 @@
 
   imports = [
     ./bash.nix
-    ./sway.nix
     ./kitty.nix
+    ./mpv.nix
+    ./sway.nix
     ./waybar.nix
     nix-colors.homeManagerModule
   ];
