@@ -22,7 +22,7 @@
       network.format-ethernet = "Ethernet {icon}";
       network.format-linked = "No IP";
       network.format-disconnected = "Disconnected {icon}";
-      network.tooltip-format-wifi = "{essid} ({signalStrength}%) {icon}";
+      network.tooltip-format-wifi = "{essid}  {ipaddr}/{cidr}";
       network.tooltip-format-ethernet = "{ifname}  {ipaddr}/{cidr}";
       network.format-icons.wifi = ["" "" ""];
       network.format-icons.ethernet = [""];
