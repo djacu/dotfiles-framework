@@ -23,7 +23,7 @@
   wayland.windowManager.sway.config.output = {
     "BOE 0x095F Unknown" = {
       mode = "2256x1504@60Hz";
-      scale = "1.25";
+      scale = "1.00";
     };
   };
 
