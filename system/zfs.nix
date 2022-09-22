@@ -18,7 +18,7 @@
   # boot loader specific config
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.enable = true;
-  boot.loader.systemd-boot.consoleMode = "2";
+  boot.loader.systemd-boot.consoleMode = "auto";
 
   users.users.root.initialHashedPassword = "$6$13srfFWQP.3ASRu6$2MaNi9.R9sQ70azNS1nO8LdcGkJy3lJHHEqtuPMChBmu9uHf9RIF7hwkcYQyTB/El/l4m0FKfG7dlQjrOTn7r/";
 }
