@@ -2,6 +2,7 @@
   lib,
   config,
   nix-colors,
+  sway-tools,
   ...
 }: {
   programs.waybar.enable = true;
@@ -13,7 +14,7 @@
 
       modules-left = ["sway/workspaces" "sway/mode"];
       modules-center = ["sway/window"];
-      modules-right = ["tray" "network" "memory" "cpu" "battery" "clock"];
+      modules-right = ["tray" "network" "memory" "cpu" "battery" "custom/pipewire" "clock"];
 
       "sway/window".format = "{}";
       "sway/window".max-length = 50;
@@ -41,6 +42,15 @@
       battery.format-icons = ["" "" "" "" ""];
       battery.states.warning = 30;
       battery.states.critical = 15;
+
+      "custom/pipewire".format = "{percentage}% {icon}";
+      "custom/pipewire".return-type = "json";
+      "custom/pipewire".signal = 8;
+      "custom/pipewire".interval = "once";
+      "custom/pipewire".format-icons.mute = "ﱝ";
+      "custom/pipewire".format-icons.default = ["" "" ""];
+      "custom/pipewire".tooltip = false;
+      "custom/pipewire".exec = "pw-volume status";
 
       clock.tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
     };
