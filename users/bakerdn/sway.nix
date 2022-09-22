@@ -21,9 +21,9 @@
 
   # framework resolution
   wayland.windowManager.sway.config.output = {
-    "Unknown 0x095F 0x00000000" = {
+    "BOE 0x095F Unknown" = {
       mode = "2256x1504@60Hz";
-      scale = "1.35";
+      scale = "1.25";
     };
   };
 
