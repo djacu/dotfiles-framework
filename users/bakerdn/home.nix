@@ -3,7 +3,6 @@
   pkgs,
   nur,
   nix-colors,
-  sway-tools,
   ...
 }: {
   # Let Home Manager install and manage itself.

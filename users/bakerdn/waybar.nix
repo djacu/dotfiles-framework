@@ -2,7 +2,6 @@
   lib,
   config,
   nix-colors,
-  sway-tools,
   ...
 }: {
   programs.waybar.enable = true;
