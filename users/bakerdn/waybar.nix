@@ -34,11 +34,11 @@
 
       cpu.format = "{usage}% ";
 
-      battery.format = "{capacity}% {icon}";
-      battery.format-charging = "{capacity}% ";
-      battery.format-plugged = "{capacity}% ";
+      battery.format-discharging = "{capacity}% {icon}";
+      battery.format-charging = "{capacity}% ";
+      battery.format-plugged = "{capacity}% ";
+      battery.format-icons = ["" "" "" "" "" "" "" "" "" "" ""];
       battery.format-alt = "{time} {icon}";
-      battery.format-icons = ["" "" "" "" ""];
       battery.states.warning = 30;
       battery.states.critical = 15;
 
