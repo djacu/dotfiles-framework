@@ -44,7 +44,7 @@
 
       backlight.device = "intel_backlight";
       backlight.format = "{percent}% {icon}";
-      backlight.format-icons = ["" ""];
+      backlight.format-icons = ["" "" "" "" "" "" "" "" "" "" "" "" "" "" ""];
 
       "custom/pipewire".format = "{percentage}% {icon}";
       "custom/pipewire".return-type = "json";

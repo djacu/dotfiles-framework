@@ -27,7 +27,7 @@
   fonts.fontDir.enable = true;
   fonts.fontconfig.enable = true;
   fonts.fontconfig.antialias = true;
-  fonts.fontconfig.defaultFonts.monospace = ["Fira Code Light"];
+  fonts.fontconfig.defaultFonts.monospace = ["Fira Code Regular Nerd Font Complete Mono"];
   fonts.fontconfig.defaultFonts.sansSerif = ["Source Sans Pro"];
   fonts.fontconfig.defaultFonts.serif = ["Source Sans Pro"];
   fonts.fonts = with pkgs; [
