@@ -59,6 +59,9 @@
     fd
     jq
     neofetch
+
+    # backlight
+    brightnessctl
   ];
 
   programs.firefox = import ./firefox {inherit pkgs;};

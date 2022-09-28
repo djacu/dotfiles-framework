@@ -55,6 +55,7 @@ label#window, /* For the sway/window module. */
 #memory,
 #cpu,
 #battery,
+#backlight,
 #custom-pipewire,
 #clock {
     margin: 10px 10px 0 0;
@@ -72,6 +73,7 @@ label#window, /* For the sway/window module. */
 #memory,
 #cpu,
 #battery,
+#backlight,
 #custom-pipewire,
 #clock {
     background: rgba(base05, 0.9);

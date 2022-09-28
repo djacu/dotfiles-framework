@@ -40,5 +40,7 @@
     bindsym XF86AudioRaiseVolume exec "pw-volume change +5%; pkill -RTMIN+8 waybar"
     bindsym XF86AudioLowerVolume exec "pw-volume change -5%; pkill -RTMIN+8 waybar"
     bindsym XF86AudioMute exec "pw-volume mute toggle; pkill -RTMIN+8 waybar"
+    bindsym XF86MonBrightnessUp exec "brightnessctl s +5%; pkill -RTMIN+8 waybar"
+    bindsym XF86MonBrightnessDown exec "brightnessctl s 5%-; pkill -RTMIN+8 waybar"
 '';
 }

@@ -13,7 +13,7 @@
 
       modules-left = ["sway/workspaces" "sway/mode"];
       modules-center = ["sway/window"];
-      modules-right = ["tray" "network" "memory" "cpu" "battery" "custom/pipewire" "clock"];
+      modules-right = ["tray" "network" "memory" "cpu" "battery" "backlight" "custom/pipewire" "clock"];
 
       "sway/window".format = "{}";
       "sway/window".max-length = 50;
@@ -41,6 +41,10 @@
       battery.format-icons = ["" "" "" "" ""];
       battery.states.warning = 30;
       battery.states.critical = 15;
+
+      backlight.device = "intel_backlight";
+      backlight.format = "{percent}% {icon}";
+      backlight.format-icons = ["" ""];
 
       "custom/pipewire".format = "{percentage}% {icon}";
       "custom/pipewire".return-type = "json";
