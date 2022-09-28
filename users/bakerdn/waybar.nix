@@ -24,15 +24,15 @@
       network.format-disconnected = "Disconnected {icon}";
       network.tooltip-format-wifi = "{essid}  {ipaddr}/{cidr}";
       network.tooltip-format-ethernet = "{ifname}  {ipaddr}/{cidr}";
-      network.format-icons.wifi = ["" "" ""];
+      network.format-icons.wifi = [""];
       network.format-icons.ethernet = [""];
       network.format-icons.disconnected = [""];
 
       memory.interval = 30;
-      memory.format = "{}% ";
+      memory.format = "{}% ";
       memory.tooltip-format = "{used:0.1f}G/{total:0.1f}G";
 
-      cpu.format = "{usage}% ";
+      cpu.format = "{usage}% ";
 
       battery.format-discharging = "{capacity}% {icon}";
       battery.format-charging = "{capacity}% ";
