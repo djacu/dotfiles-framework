@@ -43,7 +43,7 @@
     git
     git-crypt
     gnupg
-    pinentry_qt
+    pinentry-qt
 
     # graphical
     inkscape
@@ -62,6 +62,9 @@
 
     # backlight
     brightnessctl
+
+    # social
+    discord
   ];
 
   programs.firefox = import ./firefox {inherit pkgs;};
