@@ -52,6 +52,7 @@ in
   (wrapNeovim neovim-unwrapped {}).override {
     # viAlias = true;
     # vimAlias = true;
+    withNodeJs = true;
     configure = {
       packages.myVimPackages.start = lib.flatten (map (x: x.plugins) pluginsWithConfig);
 
