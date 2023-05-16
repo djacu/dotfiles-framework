@@ -1,7 +1,7 @@
 {pkgs}: {
   enable = true;
   package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
-    forceWayland = true;
+    # forceWayland = true;
     extraPolicies.ExtensionSettings = {};
   };
   profiles.default = {
@@ -21,7 +21,7 @@
       "ui.systemUsesDarkTheme" = true; # Dark mode
     };
   };
-  extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+  profiles.default.extensions = with pkgs.nur.repos.rycee.firefox-addons; [
     lastpass-password-manager
     privacy-badger
     sponsorblock
